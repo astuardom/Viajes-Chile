@@ -17,6 +17,9 @@ body {
     object-fit: cover;
 }
 
+.custom-hr {
+    border-top: 2px solid #c2cbd1;
+}
 
 .section {
     background-color: black;
