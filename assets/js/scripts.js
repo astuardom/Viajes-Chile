@@ -1,8 +1,16 @@
-    document.getElementById('submit').addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function() {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+    document.getElementById('enviarCorreo').addEventListener('click', function() {
         alert('El correo fue enviado correctamente...');
     });
 
-    document.getElementById('destacados').addEventListener('dblclick', function() {
+    document.getElementById('ingredientes').addEventListener('dblclick', function() {
+        this.style.color = 'red';
+    });
+
+    document.getElementById('preparacion').addEventListener('dblclick', function() {
         this.style.color = 'red';
     });
 
@@ -14,3 +22,4 @@
             }
         });
     });
+});
