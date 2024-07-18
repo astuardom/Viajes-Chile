@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('enviado correctamente...');
     });
 
+    document.getElementById('quienes').addEventListener('dblclick', function() {
+        this.style.color = '#00ffff';
+    });
+
     document.getElementById('DESTACADOS').addEventListener('dblclick', function() {
         this.style.color = '#00ffff';
     });

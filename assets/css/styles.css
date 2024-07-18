@@ -23,6 +23,10 @@ body {
     object-fit: cover;
 }
 
+.car.text {
+    text-align: justify !important;
+}
+
 .custom-hr {
     border-top: 2px solid #c2cbd1;
 }
