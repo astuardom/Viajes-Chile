@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         this.style.color = '#00ffff';
     });
 
-    document.querySelectorAll('card-title').forEach(function(title) {
+    document.querySelectorAll('.card-title').forEach(function(title) {
         title.addEventListener('click', function() {
             const cardText = this.nextElementSibling;
             if (cardText) {
