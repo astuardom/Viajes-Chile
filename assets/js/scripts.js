@@ -6,11 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('enviado correctamente...');
     });
 
-    document.getElementById('ingredientes').addEventListener('dblclick', function() {
-        this.style.color = 'red';
+    document.getElementById('DESTACADOS').addEventListener('dblclick', function() {
+        this.style.color = '#00ffff';
+    });
+    
+    document.getElementById('CONTACTO').addEventListener('dblclick', function() {
+        this.style.color = '#00ffff';
     });
 
-    document.querySelectorAll('.card-title').forEach(function(title) {
+    document.querySelectorAll('card-title').forEach(function(title) {
         title.addEventListener('click', function() {
             const cardText = this.nextElementSibling;
             if (cardText) {
